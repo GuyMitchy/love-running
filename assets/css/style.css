@@ -81,7 +81,7 @@ nav {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-    list-style: none;
+    list-style-type: none;
 }
 
 #menu > li {
@@ -99,6 +99,33 @@ main {
 footer{
     background-color: orange;
     
+}
+
+/* Media Query: Tablets and larger (768px +) */
+
+@media screen and (min-width:768px) {
+
+    /* Header */
+
+    nav{
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem; 
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }
 
 
