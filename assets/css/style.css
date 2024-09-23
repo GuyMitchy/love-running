@@ -28,6 +28,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     
 }
 
@@ -42,37 +45,38 @@ h1 {
     letter-spacing: 2px;
     color:#252525
 }
-/*  Main */
-main {
-    background-color: lightblue;
-    /* Make main element take up surplus space to push footer down */
-    flex: 1 0 auto;
-}
-/* Footer */
-footer{
-    background-color: orange;
-    
-}
-/* Font classes */
-.lato-light {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-
-
-.oswald-LR {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.active {
+ 
+.active {                         /* Used to show user location on site in navbar */
     border-bottom: 1px solid;
     color: inherit;
 }
+
+/* Navbar styles with dropdown toggle*/
+
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top:100%
+}
+
+/* Nav Toggle*/
+
+#nav-toggle:checked~nav {
+    display:block;    
+}
+
+#nav-toggle {
+    display:none
+}
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 
 #menu {
     font-size: 110%;
@@ -84,3 +88,17 @@ footer{
     margin-bottom: 1em;
   
 }
+/*  Main Content */
+main {
+    background-color: lightblue;
+    /* Make main element take up surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 47px;
+}
+/* Footer */
+footer{
+    background-color: orange;
+    
+}
+
+
