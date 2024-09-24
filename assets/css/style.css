@@ -96,10 +96,21 @@ main {
     margin-top: 47px;
 }
 /* Footer */
-footer{
-    background-color: orange;
-    
+#networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
+
+#networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+
 
 /* Media Query: Tablets and larger (768px +) */
 
@@ -148,6 +159,7 @@ footer{
 #menu a:hover {
     border-bottom: 1px solid;
     color: #3a3a3a;
-
 }
+
+
 }
