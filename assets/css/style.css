@@ -141,4 +141,13 @@ footer{
     }
 }
 
+/* Media Query: Tablets and larger (768px +) */
 
+@media screen and (min-width:992px) {
+
+#menu a:hover {
+    border-bottom: 1px solid;
+    color: #3a3a3a;
+
+}
+}
