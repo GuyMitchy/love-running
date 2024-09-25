@@ -110,6 +110,7 @@ nav {
 }
 
 /*  Main Content */
+/* Main content */
 main {
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
@@ -119,6 +120,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Hero Section*/
 #hero {
@@ -231,25 +233,35 @@ main {
 /* Form styles */
 
 #signup {
-    background-image: url(../images/signup-image.webp);
-    padding: 20px 10% 0 10%;
+    background-image: url("../images/signup-image.webp");
     background-size: cover;
     background-position: 75%;
+    padding: 20px 10% 0 10%;
     flex-grow: 1;
+    width:100%
+    
+}
+
+
+#signup-form {
+    padding: 30px;
+    max-width: 500px;
+    background-position: center;
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, .6);
+    margin-bottom: 20px;
 }
 
 
 #signup-form > h2 {
     color: #fafafa;
     margin-bottom:20px;
+    
+    
 
 }
 
-#signup-form {
-    padding: 30px;
-    color: #ffffff;
-    background-color: rgba(60, 60, 60, .6);
-}
+
 
 .text-input {
     background: transparent;
@@ -386,23 +398,29 @@ main {
         column-count: 3;
     }
 
-}
+
 
 /* Form Content */
 
 #signup {
     background-position: center;
-    position: relative;
-    
+    position:relative;
 }
 
 #signup-form {
-    max-width: 400px;
+    max-width: 500px;
     position: absolute;
+    top: 10px;
     left: 10%;
-    top: 150px;
-    right: 10%
+    
+    
+   
+   
 }
+
+}
+
+
 
 
 
