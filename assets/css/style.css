@@ -249,7 +249,9 @@ main {
     background-position: center;
     color: #ffffff;
     background-color: rgba(60, 60, 60, .6);
-    margin-bottom: 20px;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    
 }
 
 
@@ -410,12 +412,12 @@ main {
 #signup-form {
     max-width: 500px;
     position: absolute;
-    top: 10px;
-    left: 10%;
     
+    margin-top: 0;
+   
     
-   
-   
+ 
+       
 }
 
 }
@@ -436,6 +438,8 @@ main {
     #photos {
         column-count: 4;
     }
+
+  
 
 }
 
